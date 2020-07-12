@@ -3,6 +3,6 @@
 
 # XGBoost tree classification.
 
-'''
+```
 import pandas as pd
-'''
+```
