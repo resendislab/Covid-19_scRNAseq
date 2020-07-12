@@ -42,3 +42,16 @@ import matplotlib
 ```
 
 Let's star the analysis.
+
+# Files preprocessing.
+
+Given that matrix is written in sparse notation, we separate the varibles to build the normal matrix. In sparse notation the first number into a row is the row of the normal matrix, the second number on the row is the colums; and the third is the numerical values of the entry. We separate and define files to these information. It was done in bash to define these files:
+1) rows.csv (File with the rows)
+2) cols.csv (File with columns)
+3) values.csv (File with the values at row and columns specified in rows.csv and cols.csv files)
+
+```
+osbaldo@nautilus:~/COVID-19/singleCell$ sed -n '3,143014366p' Data_filtered.txt | awk '{print$1}' > rows.csv
+osbaldo@nautilus:~/COVID-19/singleCell$ sed -n '3,143014366p' Data_filtered.txt | awk '{print$2}' > cols.csv
+osbaldo@nautilus:~/COVID-19/singleCell$ sed -n '3,143014366p' Data_filtered.txt | awk '{print$3}' > values.csv
+```
