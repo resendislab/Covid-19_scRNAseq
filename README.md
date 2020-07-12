@@ -8,7 +8,37 @@
  2) Labels.txt (label of the samples ordered as indicated in the count matrix).
  3) genes.txt ( list of genes orderedas the count matrix).
  
- Let's star the analysis.
+Requirements: Install 
 ```
+from scipy import sparse
+from numpy import array
+import numpy as np
 import pandas as pd
+from numpy import savetxt 
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import confusion_matrix
+from sklearn.externals import joblib
+print('Libraries Imported')
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import confusion_matrix
+from sklearn.externals import joblib
+print('Libraries Imported')
+from scipy import sparse
+from numpy import array
+from numpy import savetxt 
+import pickle
+import xgboost as xgb
+import matplotlib.pylab as plt
+import seaborn as sns
+from sklearn.metrics import classification_report, confusion_matrix
+from matplotlib import pyplot
+import matplotlib
 ```
+
+Let's star the analysis.
