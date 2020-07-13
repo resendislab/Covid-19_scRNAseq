@@ -64,3 +64,9 @@ We star the analysis with these files:
 5) medical_class.csv  (This file contains the classification of the patients: 0 Normal, 1 COVID-modest; 2) COVID-19 severe or response)
 6) rows.csv  
 7) values.csv
+
+
+Run this script in python
+```
+python3 model.py
+```
