@@ -55,3 +55,12 @@ osbaldo@nautilus:~/COVID-19/singleCell$ sed -n '3,143014366p' Data_filtered.txt 
 osbaldo@nautilus:~/COVID-19/singleCell$ sed -n '3,143014366p' Data_filtered.txt | awk '{print$2}' > cols.csv
 osbaldo@nautilus:~/COVID-19/singleCell$ sed -n '3,143014366p' Data_filtered.txt | awk '{print$3}' > values.csv
 ```
+
+We star the analysis with these files:
+1) cols.csv  
+2) Data_filtered.txt  
+3) genes.tsv  
+4) labels.tsv  
+5) medical_class.csv  (This file contains the classification of the patients: 0 Normal, 1 COVID-modest; 2) COVID-19 severe or response)
+6) rows.csv  
+7) values.csv
