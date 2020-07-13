@@ -66,7 +66,11 @@ We star the analysis with these files:
 7) values.csv
 
 
-Run this script in python
+Run this script in python to buld the model for machine learinig analysis 
 ```
 python3 model.py
 ```
+The genrated files are located in the folders: 
+1) /dat/  (contain the X and y picled)
+2) /Splited_data/ (contain X_test.pickle  X_train.pickle  y_test.pickle  y_train.pickle)
+
