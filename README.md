@@ -74,3 +74,10 @@ The genrated files are located in the folders:
 1) /dat/  (contain the X and y picled)
 2) /Splited_data/ (contain X_test.pickle  X_train.pickle  y_test.pickle  y_train.pickle)
 
+The next step is to construct the model and proceed with the XGBoost analysis. To this end, we load all the variable in python3: X_train, X_test, y_train, y_test, model, X, y, D_train, D_test. Thus, we open a sesion and run this script. In or server these files are located here: /media/usb/osbaldo/COVID-19/singlecell/repeate
+
+```
+import xgb_os
+X_train, X_test, y_train, y_test, model, X, y, D_train, D_test, model = xgb_os.preparation()
+```
+
