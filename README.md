@@ -4,7 +4,7 @@
 # XGBoost tree classification.
 
  Our machine learning analysis start from the count matrix, integrating all the count of genes identified in all the 90,000 unique cells. The main files are:
- 1) Data_filtered.txt,Data_filtered.txt ( expression matrix as "sparse Matrix")
+ 1) Data_filtered.txt ( expression matrix as "sparse Matrix")
  2) Labels.txt (label of the samples ordered as indicated in the count matrix).
  3) genes.txt ( list of genes orderedas the count matrix).
  
