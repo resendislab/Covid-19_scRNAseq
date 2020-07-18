@@ -81,3 +81,38 @@ import xgb_os
 X_train, X_test, y_train, y_test, model, X, y, D_train, D_test, model = xgb_os.preparation()
 ```
 
+Once we have all the files we proceed to calculate the confuse matrix. Thus we open python3 and run
+
+```
+python3
+
+import os
+import shap
+
+pred= model.predict(D_test)
+print(classification_report(y_test, pred))
+cm = confusion_matrix(y_test, pred)
+cm
+
+```
+
+The confuse matrix can be represented grafically by defining this function in python 
+
+```
+
+def plot_confusion_matrix(cm, classes, normalized=True, cmap='bone'):
+    plt.figure(figsize=[7, 6])
+    norm_cm = cm
+    if normalized:
+        norm_cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
+        sns.heatmap(norm_cm, annot=cm, fmt='g', xticklabels=classes, yticklabels=classes, cmap=cmap)
+```
+Then we run and save the figure in a new folder called figures/ : 
+```
+import os
+os.system('mkdir figures')
+plot_confusion_matrix(cm, ['Normal', 'Cov_Moderate', 'Cov-severe'])
+pyplot.savefig('figures/confusematrix.png')
+```
+
+
