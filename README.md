@@ -15,8 +15,6 @@ from numpy import array
 import numpy as np
 import pandas as pd
 from numpy import savetxt 
-import numpy as np
-import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
@@ -118,9 +116,35 @@ pyplot.savefig('figures/confusematrix.png')
 
 ## Explaning analysis
 
-In this setion we explore the set of genes that played a significant role in differentiate the samples at any level (normal, moderate and severe COVID-19). 
-![summary](shap_summary1.png)
+In this setion we explore the set of genes that played a significant role in differentiate the samples at any level (normal, moderate and severe COVID-19). The first plot render the genes that have more contribution to separate the samples. 
+```
+import os
+import pickle
+import shap
 
+```
+Lets start th SHAP analysis
+```
+import os
+# SHAP analysis
+explainer = shap.TreeExplainer(model)
+shap_values = explainer.shap_values(X)
+os.system('mkdir pickle')
+# Save shap_values in pickle
+pickle.dump(shap_values, open("pickle/shap_values.pickle", 'wb'), protocol=4);
+
+#load shap_values
+import os
+os.system('mkdir pickle')
+pickle_in = open("pickle/shap_values.pickle","rb")
+shap_values = pickle.load(pickle_in);
+```
+Finally we recap and save the figure
+```
+shap.summary_plot(shap_values, X)
+pyplot.savefig('figures/shap_summary1.png')
+![summary](shap_summary1.png)
+```
 
 ## Dependence plot
 ![dependence](/Dependence_figures/MT-ND4L.png)
