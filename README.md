@@ -114,10 +114,11 @@ os.system('mkdir figures')
 plot_confusion_matrix(cm, ['Normal', 'Cov_Moderate', 'Cov-severe'])
 pyplot.savefig('figures/confusematrix.png')
 ```
+![confuse](confusematrix.png)
 
 ## Explaning analysis
 
-In this setion we explore the set of genes that played a significant role in differentiate the samples at any level (normal, moderate and severe COVID-19). ![Screenshot](confusematrix.png)
+In this setion we explore the set of genes that played a significant role in differentiate the samples at any level (normal, moderate and severe COVID-19). 
 
 
 
