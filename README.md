@@ -140,10 +140,13 @@ pickle_in = open("pickle/shap_values.pickle","rb")
 shap_values = pickle.load(pickle_in);
 ```
 Finally we recap and save the figure
+
 ```
 shap.summary_plot(shap_values, X)
 pyplot.savefig('figures/shap_summary1.png')
 ```
+In figure below we identify those genes with highest relevance in classify the patients as normal (0), moderate (1), and severe (2) COVID-19 phenotype. As Figure shows, genes have different degree of contribution in most of the subgroups. Besides, only a few genes have a specific contitribution in some groups. 
+
 ![summary](shap_summary1.png)
 
 ## Dependence plot
