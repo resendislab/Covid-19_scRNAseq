@@ -114,7 +114,7 @@ os.system('mkdir figures')
 plot_confusion_matrix(cm, ['Normal', 'Cov_Moderate', 'Cov-severe'])
 pyplot.savefig('figures/confusematrix.png')
 ```
-![confuse](confusematrix.png)
+![confuse](confusematrixblue.png)
 
 ## Explaning analysis
 
