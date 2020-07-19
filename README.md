@@ -119,6 +119,6 @@ pyplot.savefig('figures/confusematrix.png')
 ## Explaning analysis
 
 In this setion we explore the set of genes that played a significant role in differentiate the samples at any level (normal, moderate and severe COVID-19). 
-
+![summary](shap_summary1.png)
 
 
