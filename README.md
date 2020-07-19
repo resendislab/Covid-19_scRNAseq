@@ -133,7 +133,7 @@ os.system('mkdir pickle')
 # Save shap_values in pickle
 pickle.dump(shap_values, open("pickle/shap_values.pickle", 'wb'), protocol=4);
 
-#load shap_values
+#load shap_values. This will allow to load the shao_values file withour run again the code.
 import os
 os.system('mkdir pickle')
 pickle_in = open("pickle/shap_values.pickle","rb")
