@@ -147,4 +147,4 @@ pyplot.savefig('figures/shap_summary1.png')
 ![summary](shap_summary1.png)
 
 ## Dependence plot
-![dependence](/Dependence_figures/MT-ND4L.png)
+![dependence](/Dependence_figures/TAOK1.png)
