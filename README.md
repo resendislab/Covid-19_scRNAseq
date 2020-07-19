@@ -143,8 +143,8 @@ Finally we recap and save the figure
 ```
 shap.summary_plot(shap_values, X)
 pyplot.savefig('figures/shap_summary1.png')
-![summary](shap_summary1.png)
 ```
+![summary](shap_summary1.png)
 
 ## Dependence plot
 ![dependence](/Dependence_figures/MT-ND4L.png)
