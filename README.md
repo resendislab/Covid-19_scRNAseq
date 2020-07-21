@@ -151,6 +151,6 @@ In figure below we identify those genes with highest relevance in classify the p
 
 ## Dependence plot
 
-The last part of this analysis is focused to identify association between variables. We depicted these plots, called dependence plots, for main variables involved in classification. Below, we show one of this figures, but the entire set are stored in folder dependences.  
+The last part of this analysis is focused to identify association between variables. We depicted these plots, called dependence plots, for main variables involved in classification. Below, we show one of this figures, but the entire set are stored in folder Dependence_figures.  
 
 ![dependence](/Dependence_figures/TAOK1.png)
