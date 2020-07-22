@@ -149,9 +149,6 @@ In figure below we identify those genes with highest relevance in classify the p
 
 ![summary](shap_summary1.png)
 
-## Dependence plot
-
-The last part of this analysis is focused to identify association between variables. We depicted these plots, called dependence plots, for main variables involved in classification. Below, we show one of this figures, but the entire set are stored in folder Dependence_figures.  
 
 ```
 import os
@@ -201,5 +198,20 @@ for i in range(3):
 ```
 
 
+## Dependence plot
+
+The last part of this analysis is focused to identify association between variables. We depicted these plots, called dependence plots, for main variables involved in classification. Below, we show one of this figures, but the entire set are stored in folder Dependence_figures.  
+To obtain the dependence plots: 
+
+```
+## Figures
+## We have selected those genes with importance in the classification.
+lista = [12962,20721,24024,16163,16164,4903,25601,25602,8242,24024,12964,19123,25603,11543,25605,24762,13668,24587,2576,6044,20797]
+
+os.chdir('figures')
+for name in X_train.columns[lista]:
+    shap.dependence_plot(name, shap_values[0], X, display_features=X_display)
+    plt.savefig(str(name) + '.png', format='png', dpi=300, bbox_inches='tight')
+```
 
 ![dependence](/Dependence_figures/TAOK1.png)
