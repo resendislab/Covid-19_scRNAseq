@@ -150,53 +150,20 @@ In figure below we identify those genes with highest relevance in classify the p
 ![summary](shap_summary1.png)
 
 
-```
-import os
-import pickle
-import shap
-
-# SHAP analysis
-
-explainer = shap.TreeExplainer(model)
-shap_values = explainer.shap_values(X)
-os.system('mkdir pickle')
-# Save shap_values
-pickle.dump(shap_values, open("pickle/shap_values.pickle", 'wb'), protocol=4);
-
-#load shap_values
-import os
-os.system('mkdir pickle')
-pickle_in = open("pickle/shap_values.pickle","rb")
-shap_values = pickle.load(pickle_in);
-
-
-###DEFINE X_DISPLAY
-X_display = X
-###CONTINUE
-#os.system('mkdir figures')
-# Ambas figuras son la misma!
-#shap.summary_plot(shap_values, X_display, plot_type="bar")
-#pyplot.savefig('figures/shap_summary1.png')
-
-shap.summary_plot(shap_values, X)
-pyplot.savefig('figures/shap_summary1.png')
-```
-The correlation for each  
+To have a more detail description of the role of important genes into the clasification, we procedded to analyze the profile behavior at each classitication for each important gene shown in the previous plot.  
 
 ```
 ##### SUMMANRY PLOTS
-#Interpration
-#https://github.com/slundberg/shap/issues/367
-
 import matplotlib.pyplot as plt
-
 for i in range(3):
     pl.clf()
     shap.summary_plot(shap_values[i], X)
     plt.savefig('sum_' + str(i)+ '.png', format='png', dpi=300, bbox_inches='tight')
 
 ```
+An example is this one:
 
+![dependence](/summary/sum_2.png)
 
 ## Dependence plot
 
