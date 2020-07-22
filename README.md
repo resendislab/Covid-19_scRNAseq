@@ -161,7 +161,7 @@ for i in range(3):
     plt.savefig('sum_' + str(i)+ '.png', format='png', dpi=300, bbox_inches='tight')
 
 ```
-An example is this one:
+For instance, in the case of the classification for patients with COVID-19 severe, the gene expression profile of the genes are given below:
 
 ![dependence](/summary/sum_2.png)
 
