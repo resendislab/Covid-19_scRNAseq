@@ -187,7 +187,15 @@ for name in X_train.columns[lista]:
 
 # Analysis severe(1) vs moderate(0) response. 
 
-In this section we compared and identify genes that separate the behavior of  Severe and moderate patients with COVID-19. In thers of the confusion matrix we obtained:
+In this section we compared and identify genes that separate the behavior of  Severe and moderate patients with COVID-19. Samples to test
+
+| Tables   |      Phenotype  | Samples |
+|----------|:---------------:|--------:|
+|          |  severe         |  12699  |
+|          |  moderate       |   7014  |
+
+
+In terms of the confusion matrix, we obtained:
 
 
 ![dependence](/Severe_Vs_Moderate/confusematrix.png)
