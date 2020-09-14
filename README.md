@@ -59,7 +59,7 @@ We star the analysis with these files:
 2) Data_filtered.txt  
 3) genes.tsv  
 4) labels.tsv  
-5) medical_class.csv  (This file contains the classification of the patients: 0 Normal, 1 COVID-modest; 2) COVID-19 severe or response)
+5) medical_class.csv  (This file contains the classification of the patients: 0 Normal, 1 COVID-moderate; 2) COVID-19 severe or response)
 6) rows.csv  
 7) values.csv
 
@@ -180,5 +180,10 @@ for name in X_train.columns[lista]:
     shap.dependence_plot(name, shap_values[0], X, display_features=X_display)
     plt.savefig(str(name) + '.png', format='png', dpi=300, bbox_inches='tight')
 ```
+
+![dependence](/Dependence_figures/TAOK1.png)
+
+
+# Analysis severe(1) vs moderate(0) response. 
 
 ![dependence](/Dependence_figures/TAOK1.png)
