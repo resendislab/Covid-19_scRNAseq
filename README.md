@@ -189,10 +189,10 @@ for name in X_train.columns[lista]:
 
 In this section we compared and identify genes that separate the behavior of  Severe and moderate patients with COVID-19. Samples to test
 
-| Tables   |      Phenotype  | Samples |
-|----------|:---------------:|--------:|
-|          |  severe         |  12699  |
-|          |  moderate       |   7014  |
+|Tables Test |      Phenotype  | Samples |
+|------------|:---------------:|--------:|
+|            |  severe         |  12699  |
+|            |  moderate       |   7014  |
 
 
 In terms of the confusion matrix, we obtained:
