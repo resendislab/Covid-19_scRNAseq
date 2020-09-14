@@ -142,6 +142,7 @@ shap_values = pickle.load(pickle_in);
 Finally we recap and save the figure
 
 ```
+
 shap.summary_plot(shap_values, X)
 pyplot.savefig('figures/shap_summary1.png')
 ```
@@ -186,4 +187,7 @@ for name in X_train.columns[lista]:
 
 # Analysis severe(1) vs moderate(0) response. 
 
-![dependence](/Dependence_figures/TAOK1.png)
+In this section we compared and identify genes that separate the behavior of  Severe and moderate patients with COVID-19. 
+
+
+![dependence](/Severe_Vs_Moderate/confusematrix.png)
