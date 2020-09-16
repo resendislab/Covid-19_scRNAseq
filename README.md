@@ -6,7 +6,7 @@
  Our machine learning analysis start from the count matrix, integrating all the count of genes identified in all the 90,000 unique cells. The main files are:
  1) Data_filtered.txt ( expression matrix as "sparse Matrix")
  2) labels.tsv (label of the samples ordered as indicated in the count matrix).
- 3) genes.tsv ( list of genes orderedas the count matrix).
+ 3) genes.tsv ( list of genes ordered as the count matrix).
  
 Requirements: Install 
 ```
