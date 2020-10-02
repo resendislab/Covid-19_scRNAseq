@@ -1,5 +1,51 @@
 # Covid-19_scRNAseq
  In this section we present an analysis based on data of single cell RNAseq coming from patients with COVID-19 stratified through 3 levels or clinical responses: normal, covid-19 moderate, and covid-19 severe or critical. Data was obtained from this paper https://www.nature.com/articles/s41591-020-0901-9. In this paper the authors proceed with a BronchoALveolar lavage Fluid (BALF) of 12 patients (3 moderate M1-M3, 6 patients wit severe/critical infection S1-S6, and 3 normal controls-HC1-HC3).
+ 
+ 
+# Analysis severe(1) vs moderate(0) response. 
+
+In this section we compared and identify genes that separate the behavior of  Severe and moderate patients with COVID-19. We started the analysis from seven files:
+
+    1) Data_filtered.txt (original de single cell).
+    2) genes.tsv         (original de single cell).
+    3) labels.tsv        (original de single cell).
+    From these files we obtain:
+    1) cols.csv
+    5) medical_class.csv (This file contains the classification of the patients: 0 Normal, 1 COVID-moderate; 2) COVID-19 severe response)
+    6) rows.csv
+    7) values.csv
+
+    In addition we have:
+    1) model.py
+    2) load_libraries.py
+
+
+
+Samples to test
+
+|Tables Test |      Phenotype  | Samples |
+|------------|:---------------:|--------:|
+|            |  severe         |  12699  |
+|            |  moderate       |   7014  |
+
+
+In terms of the confusion matrix, we obtained:
+
+
+![dependence](/Severe_Vs_Moderate/confusematrix.png)
+
+
+On the other hand, the list of genes that allows these classifications are:
+
+
+![dependence](/Severe_Vs_Moderate/shap_summary1.png)
+ 
+ 
+ 
+ 
+ 
+ # 3 stages classification
+ 
 
 # XGBoost tree classification.
 
@@ -185,42 +231,3 @@ for name in X_train.columns[lista]:
 ![dependence](/Dependence_figures/TAOK1.png)
 
 
-# Analysis severe(1) vs moderate(0) response. 
-
-In this section we compared and identify genes that separate the behavior of  Severe and moderate patients with COVID-19. We started the analysis from seven files:
-
-    1) Data_filtered.txt (original de single cell).
-    2) genes.tsv         (original de single cell).
-    3) labels.tsv        (original de single cell).
-    From these files we obtain:
-    1) cols.csv
-    5) medical_class.csv (This file contains the classification of the patients: 0 Normal, 1 COVID-moderate; 2) COVID-19 severe response)
-    6) rows.csv
-    7) values.csv
-
-    In addition we have:
-    1) model.py
-    2) load_libraries.py
-
-
-
-
-
-Samples to test
-
-|Tables Test |      Phenotype  | Samples |
-|------------|:---------------:|--------:|
-|            |  severe         |  12699  |
-|            |  moderate       |   7014  |
-
-
-In terms of the confusion matrix, we obtained:
-
-
-![dependence](/Severe_Vs_Moderate/confusematrix.png)
-
-
-On the other hand, the list of genes that allows these classifications are:
-
-
-![dependence](/Severe_Vs_Moderate/shap_summary1.png)
