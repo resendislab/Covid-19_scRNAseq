@@ -15,18 +15,40 @@ In this section we compared and identify genes that separate the behavior of  Se
     6) rows.csv
     7) values.csv
 
-    In addition we have:
+    In addition we have these scripts in python:
     1) model.py
     2) load_libraries.py
 
 
 
-Samples to test
+In this situation the number o samples to test are:
 
 |Tables Test |      Phenotype  | Samples |
 |------------|:---------------:|--------:|
 |            |  severe         |  12699  |
 |            |  moderate       |   7014  |
+
+
+## Step 1
+
+Run in command line the script:
+
+```
+> python3 model.py
+```
+We will obtain the data in a proper notation and these separated in the independent (X) and depende variables (y).
+ 
+## Step 2.
+
+Open a sesion of python and load all the libraries required. In terminal and run:
+
+```
+> python3
+
+then:
+
+> from load_libraries import *
+```
 
 
 In terms of the confusion matrix, we obtained:
