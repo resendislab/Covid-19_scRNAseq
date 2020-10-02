@@ -187,7 +187,26 @@ for name in X_train.columns[lista]:
 
 # Analysis severe(1) vs moderate(0) response. 
 
-In this section we compared and identify genes that separate the behavior of  Severe and moderate patients with COVID-19. Samples to test
+In this section we compared and identify genes that separate the behavior of  Severe and moderate patients with COVID-19. We started the analysis from seven files:
+
+    1) Data_filtered.txt (original de single cell).
+    2) genes.tsv         (original de single cell).
+    3) labels.tsv        (original de single cell).
+    From these files we obtain:
+    1) cols.csv
+    5) medical_class.csv (This file contains the classification of the patients: 0 Normal, 1 COVID-moderate; 2) COVID-19 severe response)
+    6) rows.csv
+    7) values.csv
+
+    In addition we have:
+    1) model.py
+    2) load_libraries.py
+
+
+
+
+
+Samples to test
 
 |Tables Test |      Phenotype  | Samples |
 |------------|:---------------:|--------:|
