@@ -4,7 +4,7 @@
  
 # Analysis severe(1) vs moderate(0) response. 
 
-In this section we compared and identify genes that separate the behavior of  Severe and moderate patients with COVID-19. We started the analysis from seven files:
+In this section we compared and identify genes that separate the behavior of  Severe and moderate patients with COVID-19. We started the analysis from seven files: (server: /media/usb/osbaldo/COVID-19/singlecell/comparison_moderate_severe_covid_19)
 
     1) Data_filtered.txt (original de single cell).
     2) genes.tsv         (original de single cell).
@@ -44,11 +44,66 @@ Open a sesion of python and load all the libraries required. In terminal and run
 
 ```
 > python3
-
+```
 then:
 
-> from load_libraries import *
 ```
+# import libraries
+from load_libraries import *
+
+#load X and y
+pickle_in = open("dat/X.pickle","rb")
+X = pickle.load(pickle_in);
+pickle_in = open("dat/y.pickle","rb")
+y = pickle.load(pickle_in);
+#split the data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 43,stratify = y);
+
+# Saving X, y train and test.
+import pickle
+import os
+os.system('mkdir Splited_data')
+pickle.dump(X_train, open("Splited_data/X_train.pickle", 'wb'), protocol=4);
+pickle.dump(X_test, open("Splited_data/X_test.pickle", 'wb'), protocol=4);
+
+pickle_out = open("Splited_data/y_train.pickle","wb")
+pickle.dump(y_train, pickle_out)
+pickle_out.close()
+
+pickle_out = open("Splited_data/y_test.pickle","wb")
+pickle.dump(y_test, pickle_out)
+pickle_out.close()
+
+```
+We represent the matrix in a D notation, a more effient way to handle the matrix.
+
+```
+D_train = xgb.DMatrix(X_train, label=y_train);
+D_test = xgb.DMatrix(X_test, label=y_test);
+```
+
+Lets define the parameters and construct the XGBoost model
+```
+np.random.seed(30)
+
+params = {
+    'max_depth': 4,
+    'eta': 0.2,
+    'eval_metric':'auc',
+    'objective': 'binary:hinge',  # 'objective': 'binary:logistic' error evaluation for multiclass training
+#    'num_class': 2,
+    # Set number of GPUs if available
+    'n_gpus': 0
+}
+
+steps = 1000;
+
+model = xgb.train(params, D_train, steps)
+
+```
+
+
+
 
 
 In terms of the confusion matrix, we obtained:
