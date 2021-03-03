@@ -10,10 +10,10 @@ The pipeline was used to: 1. develop a severity classifcation method for COVID-1
 The full pipeline is structured in the three steps:
 
 * Data Download\
-Raw scRNA-seq data of Covid-19 patients were obtained from GEO (GSE145926). To sum up, bronchoalveolar lavage fluid (BALF) cells were collected from 12 patients and grouped according to their symptoms as healthy, moderate, and severe. Samples were sequenced using 10x Genomics technology [(Liao et al., 2020)](https://www.nature.com/articles/s41591-020-0901-9).
-
+Raw scRNA-seq data of Covid-19 patients were obtained from GEO (GSE145926). To sum up, bronchoalveolar lavage fluid (BALF) cells were collected from 12 patients and grouped according to their symptoms as healthy, moderate, and severe. Samples were sequenced using 10x Genomics technology [(Liao et al., 2020)](https://www.nature.com/articles/s41591-020-0901-9).\
 The associated scrips can be found in Download_Data folder. The Download_data.R file downloads data and save them in a local folder. The Load_data.R file merge the data with labels for normal, moderate and severe files are associated into one sparse matrix. For the machine learning analysis three files are saved: the matrix count, gene names and labels samples. For the immune landscape analysis, a seurat object is save containing the data and the samples associated information.
 
 * [Machine Learning](Machine_Learning/README.md)
 
 * [Immune landscape analysis](Immune_Landscape/README.md)
+
