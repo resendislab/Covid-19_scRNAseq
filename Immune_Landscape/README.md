@@ -160,7 +160,7 @@ In this pipeline step, we summarized the findings in one table putting together 
 |             |            | CD14       |            | FABP4      |             |             |
 |             |            | SPP1       |            |            |             |             |
 |             |            |            |            |            |             |             |
-|             |            |            |            |            |             |             |
+            
 
 Once we characterized the clusters with a specific cell type, we re-named the umap projection accordingly and computed the proportion of control, moderate and severe samples for each cell type. The implemented scrip was Umap_prop.R. Due to the fact we cannot characterize the population named as Other, we exclude it from further analysis.
 
