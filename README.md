@@ -17,8 +17,8 @@ The associated scrips can be found in the Download_Data folder:
     For the machine learning analysis, three files are saved: the matrix count, gene names, and label samples. In the case of the immune landscape analysis, a Seurat object is saved containing the data and their metadata.
 
 * [Machine Learning](Machine_Learning/README.md)\
-To improve patients' prognosis and treatment, we proposed a classification tree using 11 genes taken from moderate and severe patients.
+To improve patients' prognosis and treatment, we proposed a classification tree using 11 genes taken from moderate and severe patients. This analysis was done in python.
 
 
 * [Immune landscape analysis](Immune_Landscape/README.md)\
-We explored the differences in the immune response among patients.
+We explored the differences in the immune response among patients. We used R to conduct singlge cell analysis.
