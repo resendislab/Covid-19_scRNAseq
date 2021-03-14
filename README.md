@@ -21,4 +21,4 @@ To improve patients' prognosis and treatment, we proposed a classification tree 
 
 
 * [Immune landscape analysis](Immune_Landscape/README.md)\
-We explored the differences in the immune response among patients. We used R to conduct singlge cell analysis.
+We explored the differences in the immune response among patients. We used R to conduct single cell analysis.
