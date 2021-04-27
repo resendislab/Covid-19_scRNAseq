@@ -1,0 +1,43 @@
+Pathway	NES	p.adjust	database
+TNF signaling pathway	-1.936026317	1.223E-04	KEGG
+Relaxin signaling pathway	-1.8374499	1.101E-03	KEGG
+Human T-cell leukemia virus 1 infection	-1.816571042	1.192E-03	KEGG
+Hepatitis B	-1.840717235	1.407E-03	KEGG
+Toll-like receptor signaling pathway	-1.759707247	1.578E-03	KEGG
+Leishmaniasis	-1.759707247	1.578E-03	KEGG
+cAMP signaling pathway	-1.783095611	1.631E-03	KEGG
+Th17 cell differentiation	-1.776220758	1.642E-03	KEGG
+IL-17 signaling pathway	-1.768221088	1.697E-03	KEGG
+Pertussis	-1.785110072	1.835E-03	KEGG
+response to mechanical stimulus	-1.843088726	4.539E-03	GO-BP
+response to radiation	-1.821822832	4.946E-03	GO-BP
+regu. of DNA-templated transcription in response to stress	-1.780514155	9.388E-03	GO-BP
+response to toxic substance	-1.752207608	1.417E-02	GO-BP
+response to purine-containing compound	-1.715084722	1.594E-02	GO-BP
+response to organophosphorus	-1.715084722	1.594E-02	GO-BP
+immune response-regulating signaling pathway	-1.707355772	1.698E-02	GO-BP
+response to molecule of bacterial origin	-1.698846003	1.793E-02	GO-BP
+response to oxidative stress	-1.693700547	1.822E-02	GO-BP
+regulation of DNA-binding transcription factor activity	-1.721466158	1.856E-02	GO-BP
+Innate Immune System	-1.694975097	4.685E-03	Reactome
+Toll Like Receptor 4 (TLR4) Cascade	-1.694975097	4.685E-03	Reactome
+MyD88-independent TLR4 cascade	-1.694975097	4.685E-03	Reactome
+Toll Like Receptor 3 (TLR3) Cascade	-1.694975097	4.685E-03	Reactome
+Toll-like Receptor Cascades	-1.694975097	4.685E-03	Reactome
+TRIF(TICAM1)-mediated TLR4 signaling	-1.694975097	4.685E-03	Reactome
+Toll Like Receptor 9 (TLR9) Cascade	-1.694975097	4.685E-03	Reactome
+Toll Like Receptor 7/8 (TLR7/8) Cascade	-1.694975097	4.685E-03	Reactome
+TRAF6 mediated induction of NFkB and MAP kinases upon TLR7/8 or 9 activation	-1.694975097	4.685E-03	Reactome
+MyD88 dependent cascade initiated on endosome	-1.694975097	4.685E-03	Reactome
+Apoptosis signaling pathway	-1.815094611	3.787E-04	Panther
+CCKR signaling map	-1.585890836	2.001E-02	Panther
+Hepatitis B infection	-1.841092881	1.216E-03	Wikipathway
+Selenium Metabolism and Selenoproteins	-1.792982355	1.690E-03	Wikipathway
+MAPK Signaling Pathway	-1.754317739	1.747E-03	Wikipathway
+Gastrin Signaling Pathway	-1.817851392	1.852E-03	Wikipathway
+IL-18 signaling pathway	-1.75543086	1.887E-03	Wikipathway
+T-Cell antigen Receptor (TCR)  Signaling Pathway	-1.797238948	1.968E-03	Wikipathway
+Toll-like Receptor Signaling Pathway	-1.75725982	2.045E-03	Wikipathway
+Regulation of toll-like receptor signaling pathway	-1.75725982	2.045E-03	Wikipathway
+RANKL/RANK Signaling Pathway	-1.777424543	2.045E-03	Wikipathway
+Prolactin Signaling Pathway	-1.845818771	2.084E-03	Wikipathway

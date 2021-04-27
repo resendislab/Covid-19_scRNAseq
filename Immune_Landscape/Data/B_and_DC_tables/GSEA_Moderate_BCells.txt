@@ -1,0 +1,10 @@
+Pathway	NES	p.adjust	database
+gastrulation	2.338165741	0.006727137	GO-BP
+Maturity onset diabetes of the young	1.917937793	0.015566453	KEGG
+endoderm development	2.107457775	0.047405294	GO-BP
+Interferon alpha/beta signaling	-2.397296271	0	Reactome
+response to type I interferon	-2.363778432	1.94E-04	GO-BP
+response to virus	-2.291035452	4.37E-04	GO-BP
+NOD-like receptor signaling pathway	-1.967223713	0.026358453	KEGG
+response to interferon-gamma	-1.92638916	0.035505658	GO-BP
+C-type lectin receptor signaling pathway	-1.800718042	0.03917051	KEGG

@@ -1,0 +1,15 @@
+Pathway	NES	p.adjust	database
+Chemokine signaling pathway	2.207930488	3.65E-05	KEGG
+NOD-like receptor signaling pathway	2.122153047	2.46E-04	KEGG
+Interferon alpha/beta signaling	2.073158057	8.13E-04	Reactome
+response to virus	2.160294036	9.55E-04	GO-BP
+response to type I interferon	2.065724844	0.003359676	GO-BP
+C-type lectin receptor signaling pathway	1.940103774	0.00414571	KEGG
+Cytokine Signaling in Immune system	1.885563544	0.012397803	Reactome
+response to interleukin-6	1.880439565	0.031121205	GO-BP
+IL-4 Signaling Pathway	1.778850649	0.041558644	Wikipathway
+Mitotic G1-G1/S phases	-2.73520188	0	Reactome
+G1 Phase	-2.527058967	2.18E-04	Reactome
+Cell Cycle	-2.548738745	2.42E-04	Reactome
+G1/S Transition	-2.300408952	0.001043878	Reactome
+S Phase	-2.300408952	0.001043878	Reactome

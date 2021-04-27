@@ -1,0 +1,33 @@
+Pathway	NES	p.adjust	database
+Fluid shear stress and atherosclerosis	1.968318322	0.002904893	KEGG
+Viral carcinogenesis	1.846597067	0.00409463	KEGG
+Pertussis	1.869288092	0.004099998	KEGG
+Toll-like receptor signaling pathway	1.887369125	0.004239573	KEGG
+Leishmaniasis	1.887369125	0.004239573	KEGG
+C-type lectin receptor signaling pathway	1.873005028	0.004278828	KEGG
+Th17 cell differentiation	1.919047086	0.004344254	KEGG
+Herpes simplex infection	1.878034801	0.004351731	KEGG
+Hepatitis C	1.847737824	0.004396594	KEGG
+Inflammatory bowel disease (IBD)	1.830567877	0.004522211	KEGG
+response to oxidative stress	2.074688324	0.003336155	GO-BP
+response to toxic substance	1.993929477	0.007228336	GO-BP
+response to mechanical stimulus	1.945399034	0.010286478	GO-BP
+immune response-regulating signaling pathway	1.928361785	0.010633994	GO-BP
+type I interferon production	1.879615867	0.019683314	GO-BP
+response to tumor necrosis factor	1.817335342	0.031050567	GO-BP
+response to antibiotic	1.822291626	0.032825382	GO-BP
+aging	1.833682057	0.033199375	GO-BP
+cytokine metabolic process	1.790601288	0.039199821	GO-BP
+regu. of DNA-binding transcription factor activity	1.779439437	0.041187613	GO-BP
+Immune System	2.057277494	0.001765623	Reactome
+Innate Immune System	1.854871682	0.002558351	Reactome
+Toll Like Receptor 4 (TLR4) Cascade	1.854871682	0.002558351	Reactome
+MyD88-independent TLR4 cascade	1.854871682	0.002558351	Reactome
+Toll Like Receptor 3 (TLR3) Cascade	1.854871682	0.002558351	Reactome
+Toll-like Receptor Cascades	1.854871682	0.002558351	Reactome
+TRIF(TICAM1)-mediated TLR4 signaling	1.854871682	0.002558351	Reactome
+Toll Like Receptor 9 (TLR9) Cascade	1.854871682	0.002558351	Reactome
+Toll Like Receptor 7/8 (TLR7/8) Cascade	1.854871682	0.002558351	Reactome
+TRAF6 mediated induction of NFkB and MAP kinases upon TLR7/8 or 9 activation	1.854871682	0.002558351	Reactome
+Apoptosis signaling pathway	1.947312923	0.001344583	Panther
+Angiogenesis	1.685086233	0.020925073	Panther

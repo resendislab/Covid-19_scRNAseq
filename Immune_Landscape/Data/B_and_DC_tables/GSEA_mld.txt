@@ -1,0 +1,16 @@
+Pathway	NES	p.adjust	database
+C-type lectin receptor signaling pathway	-2.384269577	0.001615654	KEGG
+NOD-like receptor signaling pathway	-2.197422536	0.002477336	KEGG
+Influenza A	-2.197422536	0.002477336	KEGG
+Measles	-2.177666922	0.002632917	KEGG
+Hepatitis C	-2.224449034	0.002991952	KEGG
+Human papillomavirus infection	-2.27837745	0.003051791	KEGG
+Herpes simplex infection	-2.124295257	0.004385346	KEGG
+Pancreatic cancer	-2.065684691	0.006542401	KEGG
+Chemokine signaling pathway	-2.065899602	0.007360201	KEGG
+Epstein-Barr virus infection	-2.009747223	0.010070909	KEGG
+defense response to other organism	-2.267166881	0.016445713	GO-BP
+type I interferon production	-2.033105506	0.044492664	GO-BP
+response to mechanical stimulus	-2.057078633	0.046447452	GO-BP
+Pancreatic adenocarcinoma pathway	-2.059008952	0.034368367	Wikipathway
+Interferon type I signaling pathways	-1.921872571	0.049867178	Wikipathway

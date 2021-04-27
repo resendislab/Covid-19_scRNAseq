@@ -1,0 +1,8 @@
+Pathway	NES	p.adjust	database
+Cell Cycle	2.989147755	0	Reactome
+G0 and Early G1	2.319901939	9.82E-04	Reactome
+G1 to S cell cycle control	2.317491523	0.002765736	Wikipathway
+mitotic cell cycle phase transition	2.314651642	0.017943792	GO-BP
+Cellular senescence	2.143984668	0.018628172	KEGG
+cell cycle G1/S phase transition	2.146936138	0.037518838	GO-BP
+regulation of mitochondrion organization	1.977909367	0.047419294	GO-BP
