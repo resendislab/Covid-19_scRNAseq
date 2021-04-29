@@ -675,7 +675,7 @@ enrichResult_Svr_KEGG <- WebGestaltR(enrichMethod="GSEA",
 ```
 </details>
 
-The overall results contain a table that includes the individual WebgetaltR runs in the five databases (KEGG, Panther, Wikipathway, Reactome, Gene Ontology-Biological Process) per health status condition (Moderate, Control, and Severe). However, we manually filtered the pathways with an apparent biological relevance in the COVID-19 phenotype. Here we exemplify the resulting enrichment plot related to the activated or inactivated pathways in the dendritic cells depending on the health status conditions.
+The overall results contain a table that includes the individual WebgetaltR runs in the five databases (KEGG, Panther, Wikipathway, Reactome, Gene Ontology-Biological Process) per health status condition (Moderate, Control, and Severe). However, we manually filtered the pathways with an apparent biological relevance in the COVID-19 phenotype. Here we exemplify the resulting enrichment plot related to the activated or inactivated pathways in the dendritic cells depending on the health status conditions (A.Moderate, B.Healthy Controls, and C.Severe).
 <p align="center">
   <img src="Figures/plotGSEA_DC.jpg">
 </p>
