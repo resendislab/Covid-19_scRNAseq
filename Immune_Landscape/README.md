@@ -648,6 +648,38 @@ for(j in 1:3){
   <img  src="Figures/doro_dendritic.png">
 </p>
 
+## Gene-set enrichment analysis (GSEA) for B-cells and Dendritic cells
+We used the GSEA over several databases (KEGG, GO-BP, Panther, Wikipathway, and Reactome) to provide an alternative and complementary tool to PROGENy output to unveil the functional categories within the transcription factor (TF) list from DoRothEA output in B-cells andr dendritic cells. The following analysis is an example of the usage of the WebGestaltR package v_0.4.4 in a subset of TFs related to phenoytpe of the dendritic cells in the severe health status using KEGG database.
+
+<details>
+<summary> GSEA using WebgestaltR package </summary>
+
+``` R
+## Loading Data
+Severe_Rnk_FILE <- file.path(Folder,"Severe_RnkFile.rnk")
+
+enrichResult_Svr_KEGG <- WebGestaltR(enrichMethod="GSEA",
+                                     organism="hsapiens",
+                                     enrichDatabase = "pathway_KEGG",
+                                     enrichDatabaseType = "genesymbol",
+                                     interestGeneFile= "Severe_RnkFile.rnk",
+                                     interestGeneType="genesymbol",
+                                     isOutput=TRUE,
+                                     sigMethod="top", topThr=10, minNum=5, maxNum = 500, reportNum = 30, 
+                                     perNum= 10000,
+                                     gseaP = 1, setCoverNum = 10,
+                                     outputDirectory=outputDirectory,
+                                     projectName= "Svr_GSEA_KEGG")
+
+
+```
+</details>
+
+The overall results contain a table that includes the individual WebgetaltR runs in the five databases (KEGG, Panther, Wikipathway, Reactome, Gene Ontology-Biological Process) per health status condition (Moderate, Control, and Severe). However, we manually filtered the pathways with an apparent biological relevance in the COVID-19 phenotype. Here we exemplify the resulting enrichment plot related to the activated or inactivated pathways in the dendritic cells depending on the health status conditions.
+<p align="center">
+  <img width="460" height="460" src="Figures/plotGSEA_DC.jpg">
+</p>
+
 
 
 <summary> Session Info </summary>
@@ -671,7 +703,7 @@ other attached packages:
 GEOquery_2.56.0     stringr_1.4.0       Matrix_1.2-18       rhdf5_2.32.0        RColorBrewer_1.1-2  cowplot_1.0.0      
 ggplot2_3.3.1       progeny_1.12.0      viper_1.24.0        Biobase_2.48.0      BiocGenerics_0.34.0 tidyr_1.1.0        
 pheatmap_1.0.12     tibble_3.0.1        dplyr_1.0.0         dorothea_1.2.0      purrr_0.3.4         readxl_1.3.1       
-Seurat_3.1.5       
+Seurat_3.1.5        WebGestaltR_0.4.4
 
 loaded via a namespace (and not attached):
 nlme_3.1-148       segmented_1.2-0    tsne_0.1-3         RcppAnnoy_0.0.16   httr_1.4.1         sctransform_0.2.1 
@@ -687,6 +719,6 @@ lattice_0.20-41    splines_4.0.0      hms_0.5.3          pillar_1.4.4       igra
 reshape2_1.4.4     codetools_0.2-16   leiden_0.3.3       glue_1.4.1         data.table_1.12.8  png_0.1-7         
 vctrs_0.3.0        cellranger_1.1.0   gtable_0.3.0       RANN_2.6.1         kernlab_0.9-29     future_1.17.0     
 rsvd_1.0.3         e1071_1.7-3        class_7.3-17       survival_3.1-12    viridisLite_0.3.0  cluster_2.1.0     
-globals_0.12.5     fitdistrplus_1.1-1 ellipsis_0.3.1     ROCR_1.0-11 
+globals_0.12.5     fitdistrplus_1.1-1 ellipsis_0.3.1     ROCR_1.0-11        
 ```
 
