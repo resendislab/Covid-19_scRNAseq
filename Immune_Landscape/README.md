@@ -649,7 +649,7 @@ for(j in 1:3){
 </p>
 
 ## Gene-set enrichment analysis (GSEA) for B-cells and Dendritic cells
-We used the GSEA over several databases (KEGG, GO-BP, Panther, Wikipathway, and Reactome) to provide an alternative and complementary tool to PROGENy output to unveil the functional categories within the transcription factor (TF) list from DoRothEA output in B-cells andr dendritic cells. The following analysis is an example of the usage of the WebGestaltR package v_0.4.4 in a subset of TFs related to phenoytpe of the dendritic cells in the severe health status using KEGG database.
+We used the GSEA over several databases (KEGG, GO-BP, Panther, Wikipathway, and Reactome) to provide an alternative and complementary tool to PROGENy output to unveil the functional categories within the transcription factor (TF) list from DoRothEA output in B-cells and dendritic cells. The following analysis is an example of the usage of the WebGestaltR package v_0.4.4 in a subset of TFs related to the phenoytpe of the dendritic cells in the severe health status using KEGG database.
 
 <details>
 <summary> GSEA using WebgestaltR package </summary>
@@ -677,7 +677,7 @@ enrichResult_Svr_KEGG <- WebGestaltR(enrichMethod="GSEA",
 
 The overall results contain a table that includes the individual WebgetaltR runs in the five databases (KEGG, Panther, Wikipathway, Reactome, Gene Ontology-Biological Process) per health status condition (Moderate, Control, and Severe). However, we manually filtered the pathways with an apparent biological relevance in the COVID-19 phenotype. Here we exemplify the resulting enrichment plot related to the activated or inactivated pathways in the dendritic cells depending on the health status conditions.
 <p align="center">
-  <img width="460" height="460" src="Figures/plotGSEA_DC.jpg">
+  <img src="Figures/plotGSEA_DC.jpg">
 </p>
 
 
