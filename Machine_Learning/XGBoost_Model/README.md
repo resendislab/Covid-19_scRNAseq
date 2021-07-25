@@ -1,6 +1,14 @@
 # XGBoost Model
- In this section, we present the XGBoost model that allows us to predict and classify the cell category (moderate (0) or severe (1) clinical response) from scRNASeq profiles.  
- 
+ In this section, we present the XGBoost model that allows us to predict and classify the cell category (moderate (0) or severe (1) clinical response) from scRNASeq profiles. In the following table we described the files   
+
+|File |      Description  | Samples |
+|-----|:---------------:|--------:|
+|     |  severe         |  12699  |
+|     |  moderate       |   7014  |
+
+
+
+
 # Analysis severe(1) vs moderate(0) response. 
 
 In this section we compared and identify genes that separate the behavior of Severe and moderate patients with COVID-19. We started the analysis from seven files: (server: /media/usb/osbaldo/COVID-19/singlecell/comparison_moderate_severe_covid_19)
