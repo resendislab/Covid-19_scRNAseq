@@ -1,6 +1,6 @@
 # Machine Learning analysis
  In this section, we present the machine learning analysis of single-cell RNASeq samples for patients with COVID-19. From the original paper the samples were stratified through 2 levels or clinical responses: covid-19 moderate, and covid-19 severe or critical.
- 
+rEVIEW 
 # Analysis severe(1) vs moderate(0) response. 
 
 In this section we compared and identify genes that separate the behavior of Severe and moderate patients with COVID-19. We started the analysis from seven files: (server: /media/usb/osbaldo/COVID-19/singlecell/comparison_moderate_severe_covid_19)
