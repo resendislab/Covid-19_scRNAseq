@@ -1,4 +1,3 @@
-# -- coding:utf-8 --
 # STEP: LOAD LIBRARIES
 print('Processing...')
 from scipy import sparse
@@ -24,7 +23,7 @@ import matplotlib
 import os
 print('Libraries Imported')
 #######################################################################################
-# STEP. PREPARE FILE MATRIX COMPLETE
+# Preparation of Matrix 
 r = pd.read_csv('rows.csv', header = None);
 c = pd.read_csv('cols.csv',header = None);
 v = pd.read_csv('values.csv',header = None);
@@ -43,18 +42,14 @@ z = pd.DataFrame(data = dense[1:,1:],index=rowname,columns=colname);
 data = z
 
 #####################################################################################
-# STEP Preparation matrix
+# Data preparation
 y = data['Severity'];
 X= data.drop(['Severity'],axis=1);
-# X = data[data.columns.difference(['class'])];
-
-##NOTE we transfor the index both X and y
-
 X.index = range(len(X))
 y.index = range(len(y))
 
 #####################################################################################
-## STEP. Save files as pickle
+## Save files as pickle
 os.system('mkdir dat')
 pickle.dump(X, open("dat/X.pickle", 'wb'), protocol=4);
 pickle_out = open("dat/y.pickle","wb")
@@ -62,6 +57,5 @@ pickle.dump(y, pickle_out)
 pickle_out.close()
 
 ######################################################################################
-#STEP
 print('Finish')
 
