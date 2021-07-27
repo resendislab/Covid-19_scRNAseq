@@ -2,7 +2,7 @@
 ############################################################################################################################
 ############################################################################################################################
 
-#STEP import libraries
+# Import libraries
 
 import numpy as np
 import pandas as pd
@@ -16,20 +16,16 @@ import shap
 from load_libraries import *
 import os
 
-
-
 ###########################################################################################################################
-# STEP. Load files X and y.
+# Load files X and y.
 print("Loading X and y")
 pickle_in = open("dat/X.pickle","rb")
 X = pickle.load(pickle_in);
 pickle_in = open("dat/y.pickle","rb")
 y = pickle.load(pickle_in);
 
-
-
 ###########################################################################################################################
-#STEP. Model reconstruction
+# Model reconstruction
 # seed to reproduce the data
 np.random.seed(49)
 # n_splits = 5
@@ -52,7 +48,6 @@ cnf =[] # list()
 auc = [] # list()
 features = X.columns.values.tolist()
 thres = 0.5
-
 
 count=0
 os.system('mkdir crossvalidation')
@@ -95,21 +90,21 @@ for train_idx, test_idx in kfolds.split(X):
 # STEP. This is to analyze all the crossvalidation plots and see the variation in the list of genes
     explainer = shap.TreeExplainer(bst)
     shap_values = explainer.shap_values(X)
-    vals = np.abs(shap_values).mean(0); # values improtance list
+    vals = np.abs(shap_values).mean(0); # values importance list
     fi = pd.DataFrame(list(zip(X_train.columns,vals)),columns=['colname','feature_importance']);
     fi.sort_values(by=['feature_importance'],ascending=False,inplace=True);
     f1=fi.head(20);
     f1.to_csv('crossvalidation/shap_summary_' + str(count) + '.csv', sep =" ",header= True,index=False);
-    X_display = X #    pickle.dump(shap_values, open("crossvalidation/shap_values + str(count) +".pickle", 'wb'), protocol=4); # Save shap_values
+    X_display = X 
     plt.clf()
     shap.summary_plot(shap_values, X)
-    pyplot.savefig('crossvalidation/shap_summary_' + str(count) + '.png',format='png', dpi=300, bbox_inches='tight')
+    pyplot.savefig('.../crossvalidation/shap_summary_' + str(count) + '.png',format='png', dpi=300, bbox_inches='tight')
 
 
 
 
 ######################################################################################################################################
-#STEP. Save the data
+# Save the data
 AUC =pd.DataFrame(auc)
 AUC.to_csv('crossvalidation/auc.csv')
 
