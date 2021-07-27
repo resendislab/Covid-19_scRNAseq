@@ -1,24 +1,23 @@
 
 ################################################################################################################
-# STEP. Load X and y files.
+# Load X(data) and y(classes) files.
 print('Libraries')
 from load_libraries import *
 
-# Load train-test data
-pickle_in = open("dat/X.pickle","rb")
+# Load data (X and y)
+pickle_in = open("...dat/X.pickle","rb")
 X = pickle.load(pickle_in);
-pickle_in = open("dat/y.pickle","rb")
+pickle_in = open("...dat/y.pickle","rb")
 y = pickle.load(pickle_in);
 
-# Load validation data. This is in proving...
-pickle_in = open("/media/usb/osbaldo/COVID-19/singlecell/paper_corrected/validationData/dat_val/X_val.pickle","rb")
+# Load validation data.
+pickle_in = open(".../X_val.pickle","rb")
 X_val = pickle.load(pickle_in);
-pickle_in = open("/media/usb/osbaldo/COVID-19/singlecell/paper_corrected/validationData/dat_val/y_val.pickle","rb")
+pickle_in = open(".../y_val.pickle","rb")
 y_val = pickle.load(pickle_in);
 
-
 ###############################################################################################################
-#STEP.split the data and Save X, y train and test.
+#Split the data and Save X, y train and test.
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 43,stratify = y);
 
 import pickle
@@ -36,9 +35,8 @@ pickle_out = open("Splited_data/y_test.pickle","wb")
 pickle.dump(y_test, pickle_out)
 pickle_out.close()
 
-
 ################################################################################################################
-# STEP. Construct the XGBoost model. 
+# Construct the XGBoost model. 
 print('Constructing model..')
 
 D_train = xgb.DMatrix(X_train, label=y_train);
@@ -67,7 +65,6 @@ def myfun(self=None):
 
 model.save_raw = myfun
 
-
 ##################################################################################################################
 # Save model
 os.system('mkdir Model')
@@ -75,9 +72,8 @@ pickle_out = open("Model/model.pickle","wb")
 pickle.dump(model, pickle_out)
 pickle_out.close()
 
-
 ###################################################################################################################
-#STEP Assessment of the model. Confusion matrix
+# Assessment of the model. Confusion matrix
 import os
 import shap
 
@@ -128,7 +124,7 @@ print('Confuse matrix saved!')
 
 
 ####################################################################################################################
-#STEP. Figures of the paper.
+# Figures of the paper.
 
 import matplotlib.pylab as plt
 import os
@@ -145,9 +141,7 @@ shap_values = explainer.shap_values(X)
 os.system('mkdir pickle_shap')
 pickle.dump(shap_values, open("pickle_shap/shap_values.pickle", 'wb'), protocol=4);
 
-
 X_display = X
-#plt.rcParams["font.famiy"] = "Times New Roman"
 
 plt.clf()
 shap.summary_plot(shap_values, X)
@@ -158,19 +152,6 @@ shap.summary_plot(shap_values, X, plot_type="bar")
 pyplot.savefig('figures/shap_summary1_bar.png',format='png', dpi=800, bbox_inches='tight')
 print('Shap plots saved!!')
 
-
 ######################################################################################################################################### 
-# STEP. Summary plots. Dependency plots.
-# This section is optional. In fact we do not discuss nothing in the paper.
-#print('plot the first 20 figures...')
-#vals = np.abs(shap_values).mean(0)
-#fi = pd.DataFrame(list(zip(X_train.columns,vals)),columns=['colname','feature_importance'])
-#fi.sort_values(by=['feature_importance'],ascending=False,inplace=True)
-#f1=fi.head(20)
-#lista = list(f1.index);
-
-#for name in X_train.columns[lista]:
-#    shap.dependence_plot(name, shap_values, X, display_features=X_display)
-#    plt.savefig('figures/' + str(name) + '.png', format='png', dpi=300, bbox_inches='tight')
 
 
