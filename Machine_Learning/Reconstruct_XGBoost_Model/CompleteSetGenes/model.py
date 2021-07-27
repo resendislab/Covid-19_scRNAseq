@@ -1,4 +1,4 @@
-# STEP: LOAD LIBRARIES
+# Load Libraries
 print('Processing...')
 from scipy import sparse
 from numpy import array
