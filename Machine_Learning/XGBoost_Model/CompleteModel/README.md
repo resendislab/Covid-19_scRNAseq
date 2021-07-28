@@ -22,7 +22,7 @@ As a result, the user will generate these plots:
 
 |File |      Description  | 
 |-----|:---------------:|
-![confuse](confusematrix.png) | ![confuse_val](confusematrix_validation.png)
+|![confuse](confusematrix.png) | ![confuse_val](confusematrix_validation.png):|
 
 The variable model can be used to evaluate different datasets defined for the user. If this is the case, take carufull that the set of genes en the new dataset of validation has the same length and with the same order as defined in the original X dataframe. 
 
