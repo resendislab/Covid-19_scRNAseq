@@ -4,7 +4,7 @@
 |File |      Description  | 
 |-----|:---------------:|
 |model_reduced.pickle| XGBoost model used for the paper, it incluing a **reduced** set of genes.          |
-|  CompleteModel_confusionMatrix.py  | Code for reconstruct the model with **a reduced set of genes** from scRNAseq        |  
+|  ReducedModel_confusionMatrix.py  | Code for reconstruct the model with **a reduced set of genes** from scRNAseq        |  
 |     |  The list of genes that were excluded from the analysis      |  
 | X_test & y_test    | Count matrix and cell classification used to test the model        |  
 | X_val_y_val.zip    | Count matrix and cell classification used to validate the model. Data were independen on training and was obtained from [here](https://www.cell.com/cell/fulltext/S0092-8674(21)00148-3?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867421001483%3Fshowall%3Dtrue)| 
@@ -17,7 +17,7 @@
 To construct the XGBoostmodel and prepare it to evaluate the dataset used in the main paper, run in command line the script:
 
 ```
-> python3 CompleteModel_confusionMatrix.py
+> python3 ReducedModel_confusionMatrix.py
 ```
 As a result, the user will generate these plots:
 
