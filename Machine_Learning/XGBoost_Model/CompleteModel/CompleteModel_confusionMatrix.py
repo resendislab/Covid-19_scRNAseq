@@ -6,21 +6,21 @@ from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 def myfun(self=None):
     return model_bytearray
 
-pickle_in = open("/media/usb/osbaldo/COVID-19/singlecell/paper_corrected/Model/model.pickle","rb")
+pickle_in = open("model.pickle","rb")
 model = pickle.load(pickle_in);
 
 #Load the files test
-pickle_in = open("/media/usb/osbaldo/COVID-19/singlecell/paper_corrected/Splited_data/X_test.pickle","rb")
+pickle_in = open("X_test.pickle","rb")
 X_test = pickle.load(pickle_in);
 
-pickle_in = open("/media/usb/osbaldo/COVID-19/singlecell/paper_corrected/Splited_data/y_test.pickle","rb")
+pickle_in = open("y_test.pickle","rb")
 y_test = pickle.load(pickle_in);
 
 
-pickle_in = open("/media/usb/osbaldo/COVID-19/singlecell/paper_corrected/validationData/dat_val/X_val.pickle","rb")
+pickle_in = open("X_val.pickle","rb")
 X_val = pickle.load(pickle_in);
 
-pickle_in = open("/media/usb/osbaldo/COVID-19/singlecell/paper_corrected/validationData/dat_val/y_val.pickle","rb")
+pickle_in = open("y_val.pickle","rb")
 y_val = pickle.load(pickle_in);
 
 
