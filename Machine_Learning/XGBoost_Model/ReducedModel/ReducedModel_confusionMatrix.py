@@ -10,17 +10,17 @@ pickle_in = open("model_reduced.pickle","rb")
 model_reduced = pickle.load(pickle_in);
 
 #Load the files test
-pickle_in = open("ReducedModel_ISG/Splited_data/X_test.pickle","rb")
+pickle_in = open("X_test.pickle","rb")
 X_test = pickle.load(pickle_in);
 
-pickle_in = open("ReducedModel_ISG/Splited_data/y_test.pickle","rb")
+pickle_in = open("y_test.pickle","rb")
 y_test = pickle.load(pickle_in);
 
 
-pickle_in = open("ReducedModel_ISG/validationData_reduced/dat_val/X_val.pickle","rb")
+pickle_in = open("X_val.pickle","rb")
 X_val = pickle.load(pickle_in);
 
-pickle_in = open("ReducedModel_ISG/validationData_reduced/dat_val/y_val.pickle","rb")
+pickle_in = open("y_val.pickle","rb")
 y_val = pickle.load(pickle_in);
 
 
