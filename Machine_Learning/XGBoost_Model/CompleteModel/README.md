@@ -4,8 +4,8 @@
 |File |      Description  | 
 |-----|:---------------:|
 |  CompleteModel_confusionMatrix.py  | Code for reconstruct the model with all the genes from scRNAseq        |    
-|     |         |  
-|     |         |  
+| X_test & y_test    | Count matrix and cell classification to test the model        |  
+| X_val_y_val.zip    | Count matrix and cell classification to validate the model. This data were obtained from         |  
 |     |         |  
 |     |         |  
 |     |         |  
