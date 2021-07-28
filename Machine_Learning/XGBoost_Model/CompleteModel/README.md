@@ -20,7 +20,7 @@ To construct the XGBoostmodel and prepare it to evaluate the dataset used in the
 ```
 As a result, the user will generate these plots:
 
-|File |      Description  | 
+|Test data |      Validation data  | 
 |-----|:---------------:|
 |![confuse](confusematrix.png) | ![confuse_val](confusematrix_val.png):|
 
