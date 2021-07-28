@@ -3,22 +3,13 @@
 
 |File |      Description  | 
 |-----|:---------------:|
+|model.pickle| XGBoost model used for the paper, it incluing all the genes.          |
 |  CompleteModel_confusionMatrix.py  | Code for reconstruct the model with all the genes from scRNAseq        |    
 | X_test & y_test    | Count matrix and cell classification to test the model        |  
-| X_val_y_val.zip    | Count matrix and cell classification to validate the model. Data were independen on training and was obtained from [here](https://www.cell.com/cell/fulltext/S0092-8674(21)00148-3?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867421001483%3Fshowall%3Dtrue)         |  
-|     |         |  
-|     |         |  
-|     |         |  
-|     |         |  
-|     |         |  
-|     |         |  
-|     |         |  
+| X_val_y_val.zip    | Count matrix and cell classification to validate the model. Data were independen on training and was obtained from [here](https://www.cell.com/cell/fulltext/S0092-8674(21)00148-3?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867421001483%3Fshowall%3Dtrue)| 
+|cm_cm_val.zip     | Compressed file with the confusion matrices evaluating the test(cm) and validation(cm_val) dataset respectively.        |  
 |     |         |  
 
-|File |      Description  | Samples |
-|-----|:---------------:|--------:|
-|     |  severe         |  12699  |
-|     |  moderate       |   7014  |
 
 
 # Analysis severe(1) vs moderate(0) response. 
