@@ -18,7 +18,10 @@ To construct the XGBoostmodel and prepare it to evaluate the dataset used in the
 ```
 > python3 CompleteModel_confusionMatrix.py
 ```
-The variable model can be used to evaluate different datasets defined for the user. If this is the case, take carufull that the set of genes en the new dataset of validation has the same length and with the same order as defined in the original X dataframe.
+As a result, the user will generate these plots:
+![confuse](confusematrixblue.png)
+
+The variable model can be used to evaluate different datasets defined for the user. If this is the case, take carufull that the set of genes en the new dataset of validation has the same length and with the same order as defined in the original X dataframe. 
 
 
  
