@@ -1,12 +1,15 @@
 # XGBoost Model
  This section contains the XGBoost model that allows us to predict and classify the cell category into moderate (0) or severe (1) clinical response from their scRNASeq profiles. In the following table we described the files   
 
+|File |      Description  | 
+|-----|:---------------:|
+|     |          |  
+|     |         |  
+
 |File |      Description  | Samples |
 |-----|:---------------:|--------:|
 |     |  severe         |  12699  |
 |     |  moderate       |   7014  |
-
-
 
 
 # Analysis severe(1) vs moderate(0) response. 
