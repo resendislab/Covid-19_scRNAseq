@@ -40,7 +40,7 @@ Open a sesion of python and load all the libraries required. In terminal and run
 > python3 mlcovid.py
 ```
 
-## Step 1
+## Step 3
 
 Open a sesion of python and load all the libraries required. In terminal and run:
 ```
