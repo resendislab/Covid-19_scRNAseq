@@ -1,6 +1,7 @@
 # Generation of XGBoost Model  
 This section, we present the procedure by which we construct the machine learning model to classify cells of patients with COVID-19 with a moderate or severe response from single-cell RNASeq samples. From the original paper the samples were stratified through 2 levels or clinical responses: covid-19 moderate (0), and covid-19 severe or critical (1). We start with these files
 
+## Initial files
 |Files  |      Description  | 
 |------------|:---------------:|
 |  matrix.zip          |  Count matrix of the cells         | 
@@ -11,7 +12,7 @@ This section, we present the procedure by which we construct the machine learnin
 | values.zip| Index for numric values of count matrix |
  
 
-
+## Scripts for generating the model
 In addition we have four scripts in python, these required to build and test the model
 
 |Files  |      Description  | 
@@ -47,7 +48,10 @@ Open a sesion of python and load all the libraries required. In terminal and run
 > python3 crossvalidation.py
 ```
 
+## Outputs
 
+
+## Figures
 
 
 
