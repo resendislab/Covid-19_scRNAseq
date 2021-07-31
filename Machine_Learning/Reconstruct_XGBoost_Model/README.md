@@ -23,7 +23,7 @@ In addition we have four scripts in python, these required to build and test the
 
 To build the XGBoost model we proceeded as follows:
 
-## Step 1
+### Step 1
 
 Run in command line the script:
 
@@ -32,7 +32,7 @@ Run in command line the script:
 ```
 We will obtain the data in a proper notation and these separated in the independent (X) and depende variables (y).
  
-## Step 2.
+### Step 2.
 
 Open a sesion of python and load all the libraries required. In terminal and run:
 
@@ -40,7 +40,7 @@ Open a sesion of python and load all the libraries required. In terminal and run
 > python3 mlcovid.py
 ```
 
-## Step 3
+### Step 3
 
 Open a sesion of python and load all the libraries required. In terminal and run:
 ```
