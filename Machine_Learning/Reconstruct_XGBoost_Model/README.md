@@ -24,9 +24,7 @@ In addition we have four scripts in python, these required to build and test the
 
 To build the XGBoost model we proceeded as follows:
 
-### Step 1
-
-Run in command line the script:
+*Step 1* Run in command line the script:
 ```
 > python3 model.py
 ```
