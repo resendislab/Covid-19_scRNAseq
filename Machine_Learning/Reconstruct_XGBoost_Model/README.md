@@ -30,7 +30,7 @@ Run in command line the script:
 ```
 > python3 model.py
 ```
-We will obtain the data in a proper notation and these separated in the independent (X) and depende variables (y). These variables are compressed in the file X_y.zip. A similar code was a applied to the validation test data obtained from . These variables are included int X_val_y_val.zip
+We will obtain the data in a proper notation and these separated in the independent (X) and depende variables (y). These variables are compressed in the file X_y.zip. A similar code was a applied to the validation test data obtained from [here](https://www.cell.com/cell/fulltext/S0092-8674(21)00148-3?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867421001483%3Fshowall%3Dtrue). These variables are included int X_val_y_val.zip
  
 ### Step 2.
 
