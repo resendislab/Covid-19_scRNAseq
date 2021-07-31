@@ -24,15 +24,13 @@ In addition we have four scripts in python, these required to build and test the
 
 To build the XGBoost model we proceeded as follows:
 
-*Step 1* Run in command line the script:
+**Step 1** Run in command line the script:
 ```
 > python3 model.py
 ```
 We will obtain the data in a proper notation and these separated in the independent (X) and depende variables (y). These variables are compressed in the file X_y.zip. A similar code was a applied to format the validation data, these obtained from [Ren et al](https://www.cell.com/cell/fulltext/S0092-8674(21)00148-3?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867421001483%3Fshowall%3Dtrue). These variables are included int X_val_y_val.zip
  
-### Step 2.
-
-Open a sesion of python and load all the libraries required. In terminal and run:
+**Step 2** Open a sesion of python and load all the libraries required. In terminal and run:
 
 ```
 > python3 mlcovid.py
