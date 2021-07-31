@@ -27,11 +27,10 @@ To build the XGBoost model we proceeded as follows:
 ### Step 1
 
 Run in command line the script:
-
 ```
 > python3 model.py
 ```
-We will obtain the data in a proper notation and these separated in the independent (X) and depende variables (y).
+We will obtain the data in a proper notation and these separated in the independent (X) and depende variables (y). These variables are compressed in the file X_y.zip
  
 ### Step 2.
 
