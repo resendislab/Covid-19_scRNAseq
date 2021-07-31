@@ -36,17 +36,13 @@ We will obtain the data in a proper notation and these separated in the independ
 > python3 mlcovid.py
 ```
 
-### Step 3
+**Step 3**
 
 Open a sesion of python and load all the libraries required. In terminal and run:
 ```
 > python3 crossvalidation.py
 ```
 
-## Outputs
-
-
-## Figures
 
 
 
