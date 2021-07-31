@@ -5,8 +5,10 @@ This section, we present the procedure by which we construct the machine learnin
 |------------|:---------------:|
 |  matrix.zip          |  Count matrix of the cells         | 
 |  genes.tsv          |  Lists of genes        | 
-|  barcodes.zip          | Classification of the cells/ 0 moderate; 1 severe response COVID-19       |
-
+|  barcodes.zip          | Classification of the cells as moderate (0) or severe(1) responses in COVID-19 patients       |
+| col.zip | Index for columns  |
+| rows.zip        |  Index for rows                   |
+| values.zip| Index for numric values of count matrix |
  
 # Analysis severe(1) vs moderate(0) response. 
 
