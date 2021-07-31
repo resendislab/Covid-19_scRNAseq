@@ -10,27 +10,18 @@ This section, we present the procedure by which we construct the machine learnin
 | rows.zip        |  Index for rows                   |
 | values.zip| Index for numric values of count matrix |
  
-# Analysis severe(1) vs moderate(0) response. 
 
- We started the analysis from seven initial files:
 
-    1) Data_filtered.txt (original de single cell).
-    2) genes.tsv         (original de single cell).
-    3) labels.tsv        (original de single cell).
-    From these files we obtain:
-    1) cols.csv
-    5) medical_class.csv (This file contains the classification of the patients: 0 Normal, 1 COVID-moderate; 2) COVID-19 severe response)
-    6) rows.csv
-    7) values.csv
+In addition we have four scripts in python, these required to build and test the model
 
-In addition we have four scripts in python
+|Files  |      Description  | 
+|------------|:---------------:|
+|  model.py          |  Required to format the data for training the model         | 
+|  load_libraries.py          |  Concomitant file to load the libraries in python        |
+|mlcovid.py| Traing the XGBoost model|
+|crossvalidation.py| Crossvalidation test|
 
-    1) model.py
-    2) load_libraries.py
-    3) mlcovid.py
-    4) crossvalidation.py
-    
-build the XGBoost model we proceeded as follows:
+To build the XGBoost model we proceeded as follows:
 
 ## Step 1
 
