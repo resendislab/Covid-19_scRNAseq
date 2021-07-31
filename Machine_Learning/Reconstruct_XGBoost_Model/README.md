@@ -1,10 +1,12 @@
-# Machine Learning analysis
- In this section, we present the machine learning analysis of single-cell RNASeq samples for patients with COVID-19 with a moderate or severe response. From the original paper the samples were stratified through 2 levels or clinical responses: covid-19 moderate (0), and covid-19 severe or critical (1). The entire list of cells which were used to train and test are summirized below
+# Generation of XGBoost Model  
+This section, we present the procedure by which we construct the machine learning model to classify cells of patients with COVID-19 with a moderate or severe response from single-cell RNASeq samples. From the original paper the samples were stratified through 2 levels or clinical responses: covid-19 moderate (0), and covid-19 severe or critical (1). We start with these files
 
-|Tables Test |      Phenotype  | Samples |
-|------------|:---------------:|--------:|
-|            |  severe         |  12699  |
-|            |  moderate       |   7014  |
+|Files  |      Description  | 
+|------------|:---------------:|
+|  matrix.zip          |  Count matrix of the cells         | 
+|  genes.tsv          |  Lists of genes        | 
+|  barcodes.zip          | Classification of the cells/ 0 moderate; 1 severe response COVID-19       |
+
  
 # Analysis severe(1) vs moderate(0) response. 
 
