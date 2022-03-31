@@ -1,7 +1,7 @@
 # Single Cell RNA-Seq Data Analysis for COVID-19 samples
 
 ## Attribution
-The pipeline was developed in the [Human Systems Biology Group](https://resendislab.github.io/) at [INMEGEN](https://www.inmegen.gob.mx/) that you can cite our original [paper](https://www.frontiersin.org/articles/10.3389/fimmu.2021.705646/full).
+The pipeline was developed in the [Human Systems Biology Group](https://resendislab.github.io/) at [INMEGEN](https://www.inmegen.gob.mx/). We will appreciate if you cite our original [paper](https://www.frontiersin.org/articles/10.3389/fimmu.2021.705646/full).
 
 ## Getting Started
 The pipeline was used to 1. develop a severity classification method for COVID-19 patients using machine learning techniques. 2. study dysregulated pathways in COVID-19 lung cells. If you have any questions contact us at avazquezj(at)inmegen.gob.mx and oresendis(at)inmegen.gob.mx.
